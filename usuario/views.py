@@ -5,7 +5,7 @@ from django.views.decorators.csrf import csrf_exempt # REMOVER DA PRODUÇÃO - U
 
 # Create your views here.
 def home_view(request):
-    return render(request, 'home_usuario.html')
+    return render(request, 'home.html')
 
 def cadastrar_usuario(request):
     return render(request, 'cadastrar_usuario.html')

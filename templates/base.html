@@ -1,27 +1,30 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        {% block title %}
-        {% endblock %}
-    </title>
-</head>
-<body>
-    <header>
-        {% block header %}
-        {% endblock %}
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+        <title>
+            {% block title %}
+            {% endblock %}
+        </title>
+    </head>
+    <body>
+        <header>
+            {% block header %}
+            {% endblock %}
+        </header>
 
-    <main>
-        {% block main %}
-        {% endblock %}
-    </main>
+        <main>
+            {% block main %}
+            {% endblock %}
+        </main>
 
-    <footer>
-        {% block footer %}
-        {% endblock %}
-    </footer>
-</body>
+        <footer>
+            {% block footer %}
+            {% endblock %}
+        </footer>
+    </body>
+    <script src="{% static 'script.js' %}"></script>
 </html>
